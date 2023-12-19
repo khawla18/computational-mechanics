@@ -1,0 +1,16 @@
+# Problem 1
+# a.
+length = 12.5
+width = 11
+height = 14
+volume = length * width * height
+print("a. Volume of the box:", volume, "in^3")
+
+# b.
+weight = 31
+density = weight / volume
+print("b. Average density of the box:", density, "lbs/in^3")
+
+# c.
+volume_check = volume > 1000
+print("c. Result of logical operation (volume > 1000):", volume_check)
