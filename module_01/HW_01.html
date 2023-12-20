@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -79,6 +80,15 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -132,9 +142,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../README.html">
+  
   
   
   
@@ -144,8 +156,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/comp-mech-logo.svg" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/comp-mech-logo.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/comp-mech-logo.svg" class="logo__image only-light" alt="Computational Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/comp-mech-logo.svg" class="logo__image only-dark" alt="Computational Mechanics - Home"/>`);</script>
   
   
 </a></div>
@@ -167,6 +179,25 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="02_Working_with_Python.html">02 - Working with Python</a></li>
 <li class="toctree-l2"><a class="reference internal" href="03_Numerical_error.html">03 - Numerical Error</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Homework</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <li class="toctree-l2"><a class="reference internal" href="../projects/01_Getting-started-project.html">Computational Mechanics Project #01 - Heat Transfer in Forensic Science</a></li>
 </ul>
 </li>
@@ -429,20 +460,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -469,10 +502,37 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Homework</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems-part-1">Problems <span class="xref myst">Part 1</span></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#print-the-results">Print the results</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#convert-x-to-an-integer">Convert x to an integer</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems-part-2">Problems <span class="xref myst">Part 2</span></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-values-for-x-from-0-to-2-pi">Generate values for x from 0 to 2*pi</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-sincos-function-to-compute-sin-x-and-cos-x">Use the sincos function to compute sin(x) and cos(x)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-sin-x-and-cos-x">Plot sin(x) and cos(x)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#initialize-an-empty-array-a-99">Initialize an empty array A_99</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#use-a-nested-for-loop-to-compute-the-product-of-indices-and-fill-the-array">Use a nested for-loop to compute the product of indices and fill the array</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-resulting-array">Display the resulting array</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-the-mean-of-a-99">Calculate the mean of A_99</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-mean-value">Display the mean value</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-the-standard-deviation-of-a-99">Calculate the standard deviation of A_99</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-standard-deviation">Display the standard deviation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-results">Display the results</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-usage">Example usage:</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems-part-3">Problems <span class="xref myst">Part 3</span></a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#given-data">Given data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#define-growth-rate-and-initial-condition">Define growth rate and initial condition</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analytical-solution">Analytical solution</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#euler-integration">Euler integration</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting">Plotting</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -508,17 +568,33 @@ document.write(`
 <h2>Problems <a class="reference internal" href="01_Interacting_with_Python.html"><span class="doc std std-doc">Part 1</span></a><a class="headerlink" href="#problems-part-1" title="Permalink to this heading">#</a></h2>
 <ol class="arabic">
 <li><p>Calculate some properties of a rectangular box that is 12.5”<span class="math notranslate nohighlight">\(\times\)</span>11”<span class="math notranslate nohighlight">\(\times\)</span>14” and weighs 31 lbs</p>
-<p>a. What is the volume of the box?</p>
-<p>b. What is the average density of the box?</p>
-<p>c. What is the result of the following logical operation, <code class="docutils literal notranslate"><span class="pre">volume&gt;1000</span></code> (in inches^3)</p>
+<p>a. What is the volume of the box?
+length = 12.5  # inches
+width = 11     # inches
+height = 14    # inches
+volume = length * width * height
+print(“The volume of the rectangular box is:”, volume, “cubic inches”)
+b. What is the average density of the box?
+weight_pounds = 31
+gravity = 9.8  # m/s^2
+mass_kg = weight_pounds / gravity
+average_density = mass_kg / volume
+print(“The average density of the box is:”, average_density, “kg/m^3”)
+c. What is the result of the following logical operation, <code class="docutils literal notranslate"><span class="pre">volume&gt;1000</span></code> (in inches^3)
+volume = 12.5 * 11 * 14
+result = volume &gt; 1000</p>
 </li>
 </ol>
+<p>print(“Is the volume greater than 1000 cubic inches?”, result)</p>
 <ol class="arabic" start="2">
 <li><p>Use the variables given below, <code class="docutils literal notranslate"><span class="pre">str1</span></code> and <code class="docutils literal notranslate"><span class="pre">str2</span></code>, and check the following</p>
-<p>a. <code class="docutils literal notranslate"><span class="pre">str1&lt;str2</span></code></p>
-<p>b. <code class="docutils literal notranslate"><span class="pre">str1==str2</span></code></p>
-<p>c. <code class="docutils literal notranslate"><span class="pre">str1&gt;str2</span></code></p>
-<p>d. How could you force (b) to be true? <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html?highlight=str.lower#str.lower">Hint</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html?highlight=str.lower#str.upper">Hint</a></p>
+<p>a. <code class="docutils literal notranslate"><span class="pre">str1&lt;str2</span></code>
+result_a = str1 &lt; str2
+b. <code class="docutils literal notranslate"><span class="pre">str1==str2</span></code>
+result_b = str1 == str2
+c. <code class="docutils literal notranslate"><span class="pre">str1&gt;str2</span></code>
+result_c = str1 &gt; str2
+d. How could you force (b) to be true? <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html?highlight=str.lower#str.lower">Hint</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html?highlight=str.lower#str.upper">Hint</a></p>
 </li>
 </ol>
 <div class="cell docutils container">
@@ -529,9 +605,18 @@ document.write(`
 </div>
 </div>
 </div>
-<ol class="arabic simple" start="3">
-<li><p>The following code has an error, fix the error so that the correct result is returned:</p></li>
-</ol>
+<p>str1_lower = str1.lower()
+str2_lower = str2.lower()
+result_b_forced = str1_lower == str2_lower</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="print-the-results">
+<h1>Print the results<a class="headerlink" href="#print-the-results" title="Permalink to this heading">#</a></h1>
+<p>print(“a. Is str1 less than str2?”, result_a)
+print(“b. Is str1 equal to str2?”, result_b)
+print(“c. Is str1 greater than str2?”, result_c)
+print(“d. (Forced) Is str1 equal to str2 after converting to lowercase?”, result_b_forced)
+3. The following code has an error, fix the error so that the correct result is returned:</p>
 <p><code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">is</span> <span class="pre">20</span> <span class="pre">and</span> <span class="pre">x</span> <span class="pre">is</span> <span class="pre">less</span> <span class="pre">than</span> <span class="pre">y</span></code></p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;1&quot;</span>
 <span class="n">y</span><span class="o">=</span><span class="mi">20</span>
@@ -542,6 +627,16 @@ document.write(`
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;x is not less than y&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>x = “1”
+y = 20</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="convert-x-to-an-integer">
+<h1>Convert x to an integer<a class="headerlink" href="#convert-x-to-an-integer" title="Permalink to this heading">#</a></h1>
+<p>x = int(x)</p>
+<p>if x &lt; y and y == 20:
+print(‘y is 20 and x is less than y’)
+else:
+print(‘x is not less than y’)</p>
 <ol class="arabic" start="4">
 <li><p>There is a commonly-used programming question that asks interviewees
 to build a <a class="reference external" href="https://en.wikipedia.org/wiki/Fizz_buzz">fizz-buzz</a> result.</p>
@@ -625,23 +720,102 @@ you would print out “computational mechanics”.</p>
 </tr>
 </tbody>
 </table>
-</section>
 <section id="problems-part-2">
 <h2>Problems <a class="reference internal" href="02_Working_with_Python.html"><span class="doc std std-doc">Part 2</span></a><a class="headerlink" href="#problems-part-2" title="Permalink to this heading">#</a></h2>
 <ol class="arabic">
 <li><p>Create a function called <code class="docutils literal notranslate"><span class="pre">sincos(x)</span></code> that returns two arrays, <code class="docutils literal notranslate"><span class="pre">sinx</span></code> and <code class="docutils literal notranslate"><span class="pre">cosx</span></code> that return the sine and cosine of the input array, <code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
-<p>a. Document your function with a help file in <code class="docutils literal notranslate"><span class="pre">'''help'''</span></code></p>
-<p>b. Use your function to plot sin(x) and cos(x) for x=<span class="math notranslate nohighlight">\(0..2\pi\)</span></p>
+<p>a. Document your function with a help file in <code class="docutils literal notranslate"><span class="pre">'''help'''</span></code>
+def sincos(x):
+“””
+Compute the sine and cosine of the input array x.</p>
+<p>Parameters:</p>
+<ul class="simple">
+<li><p>x (array-like): Input array.</p></li>
+</ul>
+<p>Returns:</p>
+<ul class="simple">
+<li><p>sinx (array): Sine values of x.</p></li>
+<li><p>cosx (array): Cosine values of x.</p></li>
+</ul>
+<p>Example:</p>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>x = np.linspace(0, 2 * np.pi, 100)
+sin_values, cos_values = sincos(x)
+“””
+sinx = np.sin(x)
+cosx = np.cos(x)
+return sinx, cosx
+b. Use your function to plot sin(x) and cos(x) for x=<span class="math notranslate nohighlight">\(0..2\pi\)</span>
+import matplotlib.pyplot as plt
+import numpy as np</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
 </li>
 </ol>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="generate-values-for-x-from-0-to-2-pi">
+<h1>Generate values for x from 0 to 2*pi<a class="headerlink" href="#generate-values-for-x-from-0-to-2-pi" title="Permalink to this heading">#</a></h1>
+<p>x_values = np.linspace(0, 2 * np.pi, 100)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="use-the-sincos-function-to-compute-sin-x-and-cos-x">
+<h1>Use the sincos function to compute sin(x) and cos(x)<a class="headerlink" href="#use-the-sincos-function-to-compute-sin-x-and-cos-x" title="Permalink to this heading">#</a></h1>
+<p>sin_values, cos_values = sincos(x_values)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="plot-sin-x-and-cos-x">
+<h1>Plot sin(x) and cos(x)<a class="headerlink" href="#plot-sin-x-and-cos-x" title="Permalink to this heading">#</a></h1>
+<p>plt.figure(figsize=(8, 6))
+plt.plot(x_values, sin_values, label=‘sin(x)’)
+plt.plot(x_values, cos_values, label=‘cos(x)’)
+plt.title(‘Sine and Cosine Functions’)
+plt.xlabel(‘x’)
+plt.ylabel(‘Function Value’)
+plt.legend()
+plt.grid(True)
+plt.show()</p>
 <ol class="arabic" start="2">
 <li><p>Use a for-loop to create a variable called <code class="docutils literal notranslate"><span class="pre">A_99</span></code>, where every element is the product
 of the two indices from 0 to 9 e.g. A_99[3,2]=6 and A_99[4,4]=16.</p>
 <p>a. time your script using <code class="docutils literal notranslate"><span class="pre">%%time</span></code></p>
-<p>b. Calculate the mean of <code class="docutils literal notranslate"><span class="pre">A_99</span></code></p>
-<p>c. Calculate the standard deviation of <code class="docutils literal notranslate"><span class="pre">A_99</span></code></p>
 </li>
 </ol>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="initialize-an-empty-array-a-99">
+<h1>Initialize an empty array A_99<a class="headerlink" href="#initialize-an-empty-array-a-99" title="Permalink to this heading">#</a></h1>
+<p>A_99 = np.empty((10, 10), dtype=int)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="use-a-nested-for-loop-to-compute-the-product-of-indices-and-fill-the-array">
+<h1>Use a nested for-loop to compute the product of indices and fill the array<a class="headerlink" href="#use-a-nested-for-loop-to-compute-the-product-of-indices-and-fill-the-array" title="Permalink to this heading">#</a></h1>
+<p>for i in range(10):
+for j in range(10):
+A_99[i, j] = i * j</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="display-the-resulting-array">
+<h1>Display the resulting array<a class="headerlink" href="#display-the-resulting-array" title="Permalink to this heading">#</a></h1>
+<p>print(A_99)</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>b. Calculate the mean of `A_99`
+</pre></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="calculate-the-mean-of-a-99">
+<h1>Calculate the mean of A_99<a class="headerlink" href="#calculate-the-mean-of-a-99" title="Permalink to this heading">#</a></h1>
+<p>mean_A_99 = np.mean(A_99)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="display-the-mean-value">
+<h1>Display the mean value<a class="headerlink" href="#display-the-mean-value" title="Permalink to this heading">#</a></h1>
+<p>print(“Mean of A_99:”, mean_A_99)
+c. Calculate the standard deviation of <code class="docutils literal notranslate"><span class="pre">A_99</span></code></p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="calculate-the-standard-deviation-of-a-99">
+<h1>Calculate the standard deviation of A_99<a class="headerlink" href="#calculate-the-standard-deviation-of-a-99" title="Permalink to this heading">#</a></h1>
+<p>std_A_99 = np.std(A_99)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="display-the-standard-deviation">
+<h1>Display the standard deviation<a class="headerlink" href="#display-the-standard-deviation" title="Permalink to this heading">#</a></h1>
+<p>print(“Standard Deviation of A_99:”, std_A_99)</p>
 <ol class="arabic simple" start="3">
 <li><p>Use the two arrays, X and Y, given below to create A_99 using numpy array math rather than a for-loop.</p></li>
 </ol>
@@ -653,14 +827,25 @@ of the two indices from 0 to 9 e.g. A_99[3,2]=6 and A_99[4,4]=16.</p>
 </div>
 </div>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>a. time your script using `%%time`    
-
+%%time
 b. Calculate the mean of `A_99`
-
-c. Calculate the standard deviation of `A_99`
-    
-d. create a filled contour plot of X, Y, A_99 [contourf plot documentation](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.contourf.html)
 </pre></div>
 </div>
+<p>mean_A_99 = np.mean(A_99)
+c. Calculate the standard deviation of <code class="docutils literal notranslate"><span class="pre">A_99</span></code>
+std_A_99 = np.std(A_99)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="display-the-results">
+<h1>Display the results<a class="headerlink" href="#display-the-results" title="Permalink to this heading">#</a></h1>
+<p>print(“Mean of A_99:”, mean_A_99)
+print(“Standard Deviation of A_99:”, std_A_99)
+d. create a filled contour plot of X, Y, A_99 <a class="reference external" href="https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.contourf.html">contourf plot documentation</a>
+plt.contourf(X, Y, A_99, cmap=‘viridis’)
+plt.colorbar(label=‘A_99 Values’)
+plt.xlabel(‘X’)
+plt.ylabel(‘Y’)
+plt.title(‘Filled Contour Plot of X, Y, A_99’)
+plt.show()</p>
 <ol class="arabic simple" start="4">
 <li><p>The following linear interpolation function has an error. It is supposed to return y(x) given the the two points <span class="math notranslate nohighlight">\(p_1=[x_1,~y_1]\)</span> and <span class="math notranslate nohighlight">\(p_2=[x_2,~y_2]\)</span>. Currently, it just returns and error.</p></li>
 </ol>
@@ -675,7 +860,28 @@ d. create a filled contour plot of X, Y, A_99 [contourf plot documentation](http
     <span class="k">return</span> <span class="n">p1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="n">slope</span><span class="o">*</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">p1</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
 </div>
+<p>def linInterp(x, p1, p2):
+‘’’Linear interpolation function.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Parameters:
+    x (float): The x-value for which to interpolate.
+    p1 (array): First endpoint [x1, y1].
+    p2 (array): Second endpoint [x2, y2].
+
+Returns:
+    float: The interpolated y-value at x.
+&#39;&#39;&#39;
+slope = (p2[1] - p1[1]) / (p2[0] - p1[0])
+return p1[1] + slope * (x - p1[0])
+</pre></div>
+</div>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="example-usage">
+<h1>Example usage:<a class="headerlink" href="#example-usage" title="Permalink to this heading">#</a></h1>
+<p>x_value = 2.5
+point1 = np.array([2.0, 3.0])
+point2 = np.array([3.0, 5.0])</p>
+<p>result = linInterp(x_value, point1, point2)
+print(f’Interpolated value at x={x_value}: {result}’)</p>
 <section id="problems-part-3">
 <h2>Problems <a class="reference internal" href="03_Numerical_error.html"><span class="doc std std-doc">Part 3</span></a><a class="headerlink" href="#problems-part-3" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
@@ -706,7 +912,44 @@ models assumes that the rate of change of the population p is proportional to th
 </tr>
 </tbody>
 </table>
-<p>a. Use a growth rate of <span class="math notranslate nohighlight">\(k_g=0.013\)</span> [1/years] and compare the analytical solution (use initial condition p(1900) = 1578000000) to the Euler integration for time steps of 20 years from 1900 to 2020 (Hint: use method (1)- plot the two solutions together with the given data)</p>
+<p>a. Use a growth rate of <span class="math notranslate nohighlight">\(k_g=0.013\)</span> [1/years] and compare the analytical solution (use initial condition p(1900) = 1578000000) to the Euler integration for time steps of 20 years from 1900 to 2020 (Hint: use method (1)- plot the two solutions together with the given data)
+import numpy as np
+import matplotlib.pyplot as plt</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="given-data">
+<h1>Given data<a class="headerlink" href="#given-data" title="Permalink to this heading">#</a></h1>
+<p>year, pop = np.loadtxt(‘…/data/world_population_1900-2020.csv’, skiprows=1, delimiter=‘,’, unpack=True)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="define-growth-rate-and-initial-condition">
+<h1>Define growth rate and initial condition<a class="headerlink" href="#define-growth-rate-and-initial-condition" title="Permalink to this heading">#</a></h1>
+<p>k_g = 0.013  # 1/years
+initial_population_1900 = 1578000000</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="analytical-solution">
+<h1>Analytical solution<a class="headerlink" href="#analytical-solution" title="Permalink to this heading">#</a></h1>
+<p>analytical_solution = initial_population_1900 * np.exp(k_g * (year - 1900))</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="euler-integration">
+<h1>Euler integration<a class="headerlink" href="#euler-integration" title="Permalink to this heading">#</a></h1>
+<p>dt = 20  # years
+euler_solution = np.zeros_like(pop)
+euler_solution[0] = initial_population_1900</p>
+<p>for i in range(1, len(year)):
+euler_solution[i] = euler_solution[i - 1] + k_g * euler_solution[i - 1] * dt</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="plotting">
+<h1>Plotting<a class="headerlink" href="#plotting" title="Permalink to this heading">#</a></h1>
+<p>plt.figure(figsize=(10, 6))
+plt.plot(year, pop, label=‘Measured Data’, marker=‘o’)
+plt.plot(year, analytical_solution, label=‘Analytical Solution’, linestyle=‘–’)
+plt.plot(year, euler_solution, label=‘Euler Integration’, linestyle=‘–’)
+plt.xlabel(‘Year’)
+plt.ylabel(‘Population’)
+plt.legend()
+plt.title(‘Population Growth Prediction’)
+plt.grid(True)
+plt.show()</p>
 <p>b. Discussion question: If you decrease the time steps further and the solution converges, will it converge to the actual world population? Why or why not?</p>
 <p><strong>Note: We have used a new function <code class="docutils literal notranslate"><span class="pre">np.loadtxt</span></code> here. Use the <code class="docutils literal notranslate"><span class="pre">help</span></code> or <code class="docutils literal notranslate"><span class="pre">?</span></code> to learn about what this function does and how the arguments can change the output. In the next module, we will go into more details on how to load data, plot data, and present trends.</strong></p>
 <div class="cell docutils container">
@@ -774,7 +1017,6 @@ average growth of 1900 - 2020
 </div>
 </div>
 </section>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -801,11 +1043,10 @@ average growth of 1900 - 2020
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="03_Numerical_error.html"
@@ -825,10 +1066,7 @@ average growth of 1900 - 2020
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -843,10 +1081,37 @@ average growth of 1900 - 2020
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Homework</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems-part-1">Problems <span class="xref myst">Part 1</span></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#print-the-results">Print the results</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#convert-x-to-an-integer">Convert x to an integer</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems-part-2">Problems <span class="xref myst">Part 2</span></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#generate-values-for-x-from-0-to-2-pi">Generate values for x from 0 to 2*pi</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#use-the-sincos-function-to-compute-sin-x-and-cos-x">Use the sincos function to compute sin(x) and cos(x)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#plot-sin-x-and-cos-x">Plot sin(x) and cos(x)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#initialize-an-empty-array-a-99">Initialize an empty array A_99</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#use-a-nested-for-loop-to-compute-the-product-of-indices-and-fill-the-array">Use a nested for-loop to compute the product of indices and fill the array</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-resulting-array">Display the resulting array</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-the-mean-of-a-99">Calculate the mean of A_99</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-mean-value">Display the mean value</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calculate-the-standard-deviation-of-a-99">Calculate the standard deviation of A_99</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-standard-deviation">Display the standard deviation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#display-the-results">Display the results</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-usage">Example usage:</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problems-part-3">Problems <span class="xref myst">Part 3</span></a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#given-data">Given data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#define-growth-rate-and-initial-condition">Define growth rate and initial condition</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#analytical-solution">Analytical solution</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#euler-integration">Euler integration</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting">Plotting</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>
@@ -867,6 +1132,7 @@ By <a href = https://cooperrc.github.io> Ryan C. Cooper</a>
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022.
@@ -893,8 +1159,8 @@ By <a href = https://cooperrc.github.io> Ryan C. Cooper</a>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>
