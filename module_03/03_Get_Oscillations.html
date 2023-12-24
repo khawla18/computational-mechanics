@@ -596,13 +596,13 @@ you’ll also re-use the <code class="docutils literal notranslate"><span class=
 <section id="simple-spring-mass-system-without-friction">
 <h2>Simple spring-mass system, without friction.<a class="headerlink" href="#simple-spring-mass-system-without-friction" title="Permalink to this heading">#</a></h2>
 <p>Newton’s law applied to the friction-less spring-mass system is:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c2b83723-4324-4195-9f8f-0dc2095883eb">
-<span class="eqno">(5)<a class="headerlink" href="#equation-c2b83723-4324-4195-9f8f-0dc2095883eb" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-ceee83b2-5954-4fb1-bd4f-f8fc177fa1f4">
+<span class="eqno">(5)<a class="headerlink" href="#equation-ceee83b2-5954-4fb1-bd4f-f8fc177fa1f4" title="Permalink to this equation">#</a></span>\[\begin{equation}
 -k x = m \ddot{x}
 \end{equation}\]</div>
 <p>Introducing the parameter <span class="math notranslate nohighlight">\(\omega = \sqrt{k/m}\)</span>, the equation of motion is rewriten as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-01facb88-a989-4ddd-a7f3-3aadaae35755">
-<span class="eqno">(6)<a class="headerlink" href="#equation-01facb88-a989-4ddd-a7f3-3aadaae35755" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b5f98850-97f3-4ab7-805f-8f5fdd32322d">
+<span class="eqno">(6)<a class="headerlink" href="#equation-b5f98850-97f3-4ab7-805f-8f5fdd32322d" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \ddot{x} + \omega^2 x = 0
 \end{equation}\]</div>
 <p>where a dot above a dependent variable denotes the time derivative. This is a second-order differential equation for the position <span class="math notranslate nohighlight">\(x\)</span>, having a known analytical solution that represents <em>simple harmonic motion</em>:</p>
@@ -611,21 +611,21 @@ you’ll also re-use the <code class="docutils literal notranslate"><span class=
 <section id="system-in-vector-form">
 <h3>System in vector form<a class="headerlink" href="#system-in-vector-form" title="Permalink to this heading">#</a></h3>
 <p>It’s useful to write a second-order differential equation as a set of two first-order equations: in this case, for position and velocity, respectively:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d3f1afa5-79c1-4607-901a-6dccf766332c">
-<span class="eqno">(7)<a class="headerlink" href="#equation-d3f1afa5-79c1-4607-901a-6dccf766332c" title="Permalink to this equation">#</a></span>\[\begin{eqnarray}
+<div class="amsmath math notranslate nohighlight" id="equation-02265485-effe-4fda-b66a-bc0184762e2e">
+<span class="eqno">(7)<a class="headerlink" href="#equation-02265485-effe-4fda-b66a-bc0184762e2e" title="Permalink to this equation">#</a></span>\[\begin{eqnarray}
 \dot{x} &amp;=&amp; v \nonumber\\
 \dot{v} &amp;=&amp; -\omega^2 x
 \end{eqnarray}\]</div>
 <p>Like you did in <a class="reference internal" href="02_Step_Future.html"><span class="doc std std-doc">Lesson 2</span></a> of this module, you write the state of the system as a two-dimensional vector,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c32667d4-6780-4075-a091-0c57f9ac9d1b">
-<span class="eqno">(8)<a class="headerlink" href="#equation-c32667d4-6780-4075-a091-0c57f9ac9d1b" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-d92cae7f-2a30-4296-90f2-d72ed5d70221">
+<span class="eqno">(8)<a class="headerlink" href="#equation-d92cae7f-2a30-4296-90f2-d72ed5d70221" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \mathbf{x} = \begin{bmatrix}
 x \\ v
 \end{bmatrix},
 \end{equation}\]</div>
 <p>and the differential equation in vector form:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4b7018a1-753d-4866-badc-8f37868cffcb">
-<span class="eqno">(9)<a class="headerlink" href="#equation-4b7018a1-753d-4866-badc-8f37868cffcb" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-f9cece1c-91a3-4861-af14-f1f1e0cc296d">
+<span class="eqno">(9)<a class="headerlink" href="#equation-f9cece1c-91a3-4861-af14-f1f1e0cc296d" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \dot{\mathbf{x}} = \begin{bmatrix}
 v \\ -\omega^2 x
 \end{bmatrix}.
@@ -763,8 +763,8 @@ longer simulations.</p>
 <section id="euler-cromer-method">
 <h2>Euler-Cromer method<a class="headerlink" href="#euler-cromer-method" title="Permalink to this heading">#</a></h2>
 <p>The thing is, Euler’s method has a fundamental problem with oscillatory systems. Look again at the approximation made by Euler’s method to get the position at the next time interval:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b97d656b-8056-4800-9151-aba7b8f18882">
-<span class="eqno">(10)<a class="headerlink" href="#equation-b97d656b-8056-4800-9151-aba7b8f18882" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b615d281-d5ac-4b8e-9bb9-7865a6dcd70c">
+<span class="eqno">(10)<a class="headerlink" href="#equation-b615d281-d5ac-4b8e-9bb9-7865a6dcd70c" title="Permalink to this equation">#</a></span>\[\begin{equation}
  x(t_i+\Delta t)   \approx  x(t_i) + v(t_i) \Delta t
 \end{equation}\]</div>
 <p>It uses the velocity value at the <em>beginning</em> of the time interval to step the solution to the future.</p>
@@ -775,14 +775,14 @@ longer simulations.</p>
 <p>Since Euler’s method makes a linear approximation to project the solution into the future, assuming the value of the derivative at the start of the interval, it’s not very good on oscillatory functions.</p>
 <p>A clever idea that improves on Euler’s method is to use the updated value of the derivatives for the <em>second</em> equation.</p>
 <p>Pure Euler’s method applies:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5db1a9c8-ba4f-4045-99a1-85757a455065">
-<span class="eqno">(11)<a class="headerlink" href="#equation-5db1a9c8-ba4f-4045-99a1-85757a455065" title="Permalink to this equation">#</a></span>\[\begin{eqnarray}
+<div class="amsmath math notranslate nohighlight" id="equation-e3c1dc93-603b-473e-acfd-6433d66254e0">
+<span class="eqno">(11)<a class="headerlink" href="#equation-e3c1dc93-603b-473e-acfd-6433d66254e0" title="Permalink to this equation">#</a></span>\[\begin{eqnarray}
 x(t_0) = x_0, \qquad x_{i+1} &amp;=&amp; x_i + v_i \Delta t \nonumber\\
 v(t_0) = v_0, \qquad v_{i+1} &amp;=&amp; v_i - {\omega}^2 x_i \Delta t
 \end{eqnarray}\]</div>
 <p>What if in the equation for <span class="math notranslate nohighlight">\(v\)</span> you used the value <span class="math notranslate nohighlight">\(x_{i+1}\)</span> that was just computed? Like this:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e80325e8-fb7a-4879-9ace-e0d3c95ed072">
-<span class="eqno">(12)<a class="headerlink" href="#equation-e80325e8-fb7a-4879-9ace-e0d3c95ed072" title="Permalink to this equation">#</a></span>\[\begin{eqnarray}
+<div class="amsmath math notranslate nohighlight" id="equation-38eb83e4-8374-497a-bbfb-34db08776a14">
+<span class="eqno">(12)<a class="headerlink" href="#equation-38eb83e4-8374-497a-bbfb-34db08776a14" title="Permalink to this equation">#</a></span>\[\begin{eqnarray}
 x(t_0) = x_0, \qquad x_{i+1} &amp;=&amp; x_i + v_i \Delta t \nonumber\\
 v(t_0) = v_0, \qquad v_{i+1} &amp;=&amp; v_i - {\omega}^2 x_{i+1} \Delta t
 \end{eqnarray}\]</div>
@@ -917,8 +917,8 @@ amplitudes. You should be happy with it in that sense.</p>
 <p>Both Euler’s method and the Cromer variant are <em>first-order accurate</em>: the error goes as the first power of <span class="math notranslate nohighlight">\(\Delta t\)</span>. In <a class="reference external" href="http://go.gwu.edu/engcomp3lesson2">Lesson 2</a> of this module, you showed this using a Taylor series. Let’s now confirm it numerically.</p>
 <p>Because simple harmonic motion has a known analytical function that solves the differential equation, you can directly compute a measure of the error made by the numerical solution.</p>
 <p>Suppose you ran a numerical solution in the interval from <span class="math notranslate nohighlight">\(t_0\)</span> to <span class="math notranslate nohighlight">\(T=N/\Delta t\)</span>. You could then compute the error, as follows:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-583795fd-2a9c-4962-a597-e76ed03ee402">
-<span class="eqno">(13)<a class="headerlink" href="#equation-583795fd-2a9c-4962-a597-e76ed03ee402" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-275ae4b2-49b0-4cec-9456-cb3e5cce41e0">
+<span class="eqno">(13)<a class="headerlink" href="#equation-275ae4b2-49b0-4cec-9456-cb3e5cce41e0" title="Permalink to this equation">#</a></span>\[\begin{equation}
 e = x_N - x_0 \cos(\omega T)
 \end{equation}\]</div>
 <p>where <span class="math notranslate nohighlight">\(x_N\)</span> represents the numerical solution at the <span class="math notranslate nohighlight">\(N\)</span>-th time step.</p>
@@ -1004,13 +1004,13 @@ e = x_N - x_0 \cos(\omega T)
 <h2>Modified Euler’s method<a class="headerlink" href="#modified-eulers-method" title="Permalink to this heading">#</a></h2>
 <p>Another improvement on Euler’s method is achieved by stepping the numerical solution to the midpoint of a time interval, computing the derivatives there, and then going back and updating the system state using the midpoint derivatives. This is called <em>modified Euler’s method</em>.</p>
 <p>If you write the vector form of the differential equation as:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-efd39154-aa4f-41d7-b354-4bbf510f642b">
-<span class="eqno">(14)<a class="headerlink" href="#equation-efd39154-aa4f-41d7-b354-4bbf510f642b" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1b0428ab-2d85-47e6-a701-24ccf25d4681">
+<span class="eqno">(14)<a class="headerlink" href="#equation-1b0428ab-2d85-47e6-a701-24ccf25d4681" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \dot{\mathbf{x}} = f(\mathbf{x}),
 \end{equation}\]</div>
 <p>then modified Euler’s method is:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-67647a80-fce8-41d5-b7de-49307ae66543">
-<span class="eqno">(15)<a class="headerlink" href="#equation-67647a80-fce8-41d5-b7de-49307ae66543" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ba1bf90b-2d47-4c8b-9fc9-ba9054ace1c0">
+<span class="eqno">(15)<a class="headerlink" href="#equation-ba1bf90b-2d47-4c8b-9fc9-ba9054ace1c0" title="Permalink to this equation">#</a></span>\[\begin{align}
 \mathbf{x}_{n+1/2}   &amp; = \mathbf{x}_n + \frac{\Delta t}{2} f(\mathbf{x}_n) \\
 \mathbf{x}_{n+1} &amp; = \mathbf{x}_n + \Delta t \,\, f(\mathbf{x}_{n+1/2}).
 \end{align}\]</div>
@@ -1076,7 +1076,7 @@ e = x_N - x_0 \cos(\omega T)
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7f09845a5e80&gt;]
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0x7fe21c7d3b50&gt;]
 </pre></div>
 </div>
 <img alt="../_images/ac229980735ea7606ce5bd880cac49c151f645969bc03750c35e3d0d7ea5d027.png" src="../_images/ac229980735ea7606ce5bd880cac49c151f645969bc03750c35e3d0d7ea5d027.png" />
